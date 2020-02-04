@@ -1,3 +1,12 @@
+#![feature(proc_macro_hygiene)]
+#![feature(decl_macro)]
+
+use rocket::{routes};
+
+mod router;
+
 fn main() {
-    println!("Hello, world!");
+    rocket::ignite()
+        .mount("/", routes![router::hello, router::search])
+        .launch();
 }
