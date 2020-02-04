@@ -8,11 +8,11 @@ pub fn home() -> &'static str {
 }
 
 #[get("/add")]
-pub fn search() -> &'static str {
+pub fn add() -> &'static str {
     "input receipt"
 }
 
 #[get("/statistics")]
-pub fn search() -> &'static str {
+pub fn statistics() -> &'static str {
     "statistics"
 }
