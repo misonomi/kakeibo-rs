@@ -7,6 +7,10 @@ mod router;
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![router::hello, router::search])
+        .mount("/", routes![
+            router::home,
+            router::add,
+            router::statistics,
+        ])
         .launch();
 }

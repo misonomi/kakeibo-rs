@@ -1,5 +1,4 @@
-use rocket::{get, State, http::RawStr};
-use rocket_contrib::json::Json;
+use rocket::{get};
 
 
 #[get("/")]
